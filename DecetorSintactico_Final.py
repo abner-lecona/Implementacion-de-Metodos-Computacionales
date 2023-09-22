@@ -2,8 +2,6 @@
 Etapa 1 - Situación Problema 1: Resaltador de sintaxis
 
 A01753179  Abner Maximiliano Lecona Nieves 
-A01754887  Ernesto Juárez Torres 
-A01748640  Juan Carlos Carro Cruz
 ---------------------------------------------------------
 S -> var '=' E C
 E -> A B
