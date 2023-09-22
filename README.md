@@ -2,25 +2,17 @@
 
 #Descripción de la Evidencia
 
-Con tu equipo de trabajo:
+Programarán un Analizador sintáctico (syntax analyzer) en el lenguaje de su preferencia (C++/Python/etc) usando el método de descenso recursivo.
+1.	Este analizador sintáctico deberá utilizará el output de su Actividad 2.2: Programando un DFA, es decir que necesitará una lista de tokens la cual será procesada para saber si el orden es correcto o no.
+    1.	Es válido repetir la Actividad 2.2 haciendo uso de expresiones regulares para tokenizar la entrada.
 
-Extiende el programa realizado en la █ Etapa 1 - Situación Problema 1: Resaltador de sintaxis para que aplique, de manera secuencial, el resaltado de léxico a múltiples archivos fuente contenidos en uno o varios directorios anidados.
-Desarrolla una nueva versión de tu programa para que realice el proceso de resaltado de léxico de manera paralela con el fin de aprovechar los múltiples núcleos disponibles en los CPUs modernos.
-Asegúrate de utilizar en tu código fuente las convenciones de codificación del lenguaje en el que está implementado tu programa.
-Diseña experimentos para medir y comparar los desempeños de ambas versiones de tu solución (secuencial y paralela). Se recomienda realizar diversas pruebas con diferentes configuraciones (threads vs procesos, número de trabajadores, número de archivos de entrada, etc.) Calcula el speed-up obtenido usando la siguiente fórmula:
-  
+2.	El programa debe convertir su entrada en documentos de HTML + CSS que resalten su léxico.
+    1.	El resaltador deberá mostrar distintos tipos de tokens con distintos estilos (colores, fuentes, negrita, etc.)
+    2.	El resaltador deberá mostrar líneas que contengan errores sintácticos (subrayado, línea roja, etc.)
 
-En donde:
+3.	Utilicen las convenciones de codificación del lenguaje en el que está implementado su programa.
 
- es el número de procesadores (o núcleos).
- es el tiempo que tarda en ejecutarse la versión secuencial del programa.
- es el tiempo que tarda en ejecutarse la versión paralela del programa utilizando 
- procesadores.
- es el speed-up obtenido usando  procesadores.
+4.	Pueden utilizar librerías/paquetes para el uso de expresiones regulares, así como producción de archivos HTML, pero no para el procesamiento de la gramática.
 
-Analiza los experimentos realizados y emite una conclusión sobre los mejores resultados obtenidos. ¿Bajo qué condiciones se recomedaría el uso de una u otra implementación?
-Plasma en un reporte los resultados de tus pruebas y conclusiones de los puntos 4 y 5. 
-Crea un video breve (5 minutos) demostrando el correcto funcionamiento de tu solución. Asegúrate de demostrar los siguientes puntos:
-Ejecución secuencial
-Ejecución paralela
-Generación y contenido de archivos "resaltados" (incluyendo identificación de errores sintácticos)
+5.	Archivo de prueba: test.txt Download test.txt 
+
